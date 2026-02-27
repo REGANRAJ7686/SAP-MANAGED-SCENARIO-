@@ -1,0 +1,4 @@
+@EndUserText.label: 'SERVICEBINDING'
+define service ZCIT_SERVICEBINDING {
+  expose ZCIT_DEFINITIONPROJECTION;
+}

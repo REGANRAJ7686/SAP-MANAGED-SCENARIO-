@@ -1,0 +1,70 @@
+
+@Metadata.layer: #PARTNER
+@UI.headerInfo: {
+typeName: 'Student',
+typeNamePlural: 'Students',
+title: { type: #STANDARD, label: 'Student', value: 'ID' }}
+annotate entity ZCIT_DEFINITIONPROJECTION
+with
+{
+// Student ID
+@UI: {
+lineItem: [{ position: 10, label: 'StudentID' }],
+identification: [{ position: 10, label: 'StudentID' }]
+}
+Id;
+// First Name
+@UI: {
+lineItem: [{ position: 20, label: 'Firstname' }],
+identification:[{ position: 20, label: 'Firstname' }]
+}
+Firstname;
+// Last Name
+@UI: {
+lineItem: [{ position: 30, label: 'Lastname' }],
+identification: [{ position: 30, label: 'Lastname' }]
+}
+Lastname;
+// Age
+@UI: {
+lineItem: [{ position: 40, label: 'Age' }],
+identification: [{ position: 40, label: 'Age' }]
+}
+Age;
+// Course
+@UI: {
+lineItem: [{ position: 50, label: 'Course' }],
+identification: [{ position: 50, label: 'Course' }]
+}
+Course;
+// Course Duration
+@UI: {
+lineItem: [{ position: 60, label: 'Courseduration' }],
+identification: [{ position: 60, label: 'Courseduration' }]
+}
+Courseduration;
+// Status with custom button
+@UI: {
+lineItem: [{ position: 70, label: 'Status' },
+{ type: #FOR_ACTION, dataAction: 'SetAdmitted', label: 'SetAdmitted' }],
+identification: [{ position: 70, label: 'Status' },
+{ type: #FOR_ACTION, dataAction: 'SetAdmitted', label: 'SetAdmitted' }]
+}
+Status;
+// Gender
+@UI: {
+lineItem: [{ position: 80, label: 'Gender' }],
+identification: [{ position: 80, label: 'Gender' }]
+}
+Gender;
+// Date of Birth (DOB)
+@UI: {
+lineItem: [{ position: 90, label: 'DOB' }],
+identification: [{ position: 90, label: 'DOB' }]
+}
+Dob;
+// Hidden Fields
+@UI.hidden: true
+Lastchangedat;
+@UI.hidden: true
+Locallastchangedat;}

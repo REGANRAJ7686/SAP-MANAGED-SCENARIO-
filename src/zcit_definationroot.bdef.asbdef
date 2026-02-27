@@ -1,0 +1,30 @@
+managed implementation in class zbp_cit_definationroot unique;
+strict ( 2 );
+
+define behavior for ZCIT_DEFINATIONROOT
+persistent table zcit_databasetle
+lock master
+authorization master ( instance )
+{
+
+  create;
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) Id;
+
+  mapping for zcit_databasetle
+  {
+    Id                 = id;
+    Firstname          = firstname;
+    Lastname           = lastname;
+    Age                = age;
+    Course             = course;
+    Courseduration     = courseduration;
+    Status             = status;
+    Gender             = gender;
+    Dob                = dob;
+    Lastchangedat      = lastchangedat;
+    Locallastchangedat = locallastchangedat;
+  }
+}
